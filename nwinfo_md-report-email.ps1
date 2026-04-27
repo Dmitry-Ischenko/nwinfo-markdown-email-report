@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Автоматическая генерация отчета о системе с помощью NWinfo и отправка по email
 .PARAMETER nwinfoUrl
@@ -16,10 +16,6 @@
 .PARAMETER smtpPassword
     Пароль для SMTP аутентификации
 #>
-
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-$OutputEncoding = [System.Text.Encoding]::UTF8
-$PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
 
 param(
     [Parameter(Mandatory=$true)]
